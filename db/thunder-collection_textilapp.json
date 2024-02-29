@@ -1,0 +1,893 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "textilapp",
+    "dateExported": "2024-02-27T01:31:25.321Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "92ec6c4d-9975-4598-89ea-ad2d21536ef7",
+            "name": "clients",
+            "containerId": "",
+            "created": "2024-02-02T21:00:15.054Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "c16b01a2-5d17-4d5c-9d5e-a7a7b33d1e33",
+            "name": "areas",
+            "containerId": "",
+            "created": "2024-02-02T21:00:15.056Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "889654f1-4bca-41a2-9bae-0835938180d3",
+            "name": "turns",
+            "containerId": "",
+            "created": "2024-02-06T15:35:54.110Z",
+            "sortNum": 15625
+        },
+        {
+            "_id": "adb8130b-ed06-4137-a0cb-44e9c8546b64",
+            "name": "occupations",
+            "containerId": "",
+            "created": "2024-02-06T15:49:05.297Z",
+            "sortNum": 15937.5
+        },
+        {
+            "_id": "f5b870e8-23c5-46d1-8820-29a55b7a0af0",
+            "name": "operators",
+            "containerId": "",
+            "created": "2024-02-07T02:49:47.886Z",
+            "sortNum": 16093.8
+        },
+        {
+            "_id": "7ec65422-05dc-4f81-a610-cc6cf4755a58",
+            "name": "products",
+            "containerId": "",
+            "created": "2024-02-07T03:05:39.639Z",
+            "sortNum": 16171.9
+        },
+        {
+            "_id": "db370355-cad8-464b-aae3-a4dab85b87e2",
+            "name": "colors",
+            "containerId": "",
+            "created": "2024-02-02T21:00:15.058Z",
+            "sortNum": 16250
+        },
+        {
+            "_id": "6b5e6c66-cb69-4c79-9477-99ef1143912d",
+            "name": "titles",
+            "containerId": "",
+            "created": "2024-02-02T21:00:15.057Z",
+            "sortNum": 17500
+        },
+        {
+            "_id": "867c8178-5adf-49cf-9cbe-093a4450ae61",
+            "name": "auth",
+            "containerId": "",
+            "created": "2024-02-02T21:00:15.055Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "4240cc42-e80f-44a2-ba2f-182583f1a8bd",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "867c8178-5adf-49cf-9cbe-093a4450ae61",
+            "name": "[Get] All Users",
+            "url": "{{API_TEXTILAPP}}/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-02-02T21:00:15.054Z",
+            "modified": "2024-02-02T21:39:33.247Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5e8c2216-8746-4686-ac29-96bba74869eb",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "867c8178-5adf-49cf-9cbe-093a4450ae61",
+            "name": "[Create] User",
+            "url": "{{API_TEXTILAPP}}/auth/create",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-02T21:00:15.055Z",
+            "modified": "2024-02-02T21:39:26.195Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"admin3\",\n  \"password\": \"123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6b1267b5-f952-4932-99fe-0972ca572778",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "867c8178-5adf-49cf-9cbe-093a4450ae61",
+            "name": "[Update] User",
+            "url": "{{API_TEXTILAPP}}/users",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-02-02T21:00:15.056Z",
+            "modified": "2024-02-02T21:39:21.751Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4343f7e0-328b-40c4-9364-750b4dc1d6fc",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "867c8178-5adf-49cf-9cbe-093a4450ae61",
+            "name": "[Delete] User",
+            "url": "{{API_TEXTILAPP}}/users",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-02T21:00:15.057Z",
+            "modified": "2024-02-02T21:39:17.174Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9b44e281-1f07-4f96-ad66-c5d9330ad189",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "867c8178-5adf-49cf-9cbe-093a4450ae61",
+            "name": "[Login] User",
+            "url": "{{API_TEXTILAPP}}/auth/login",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-02-02T21:00:15.058Z",
+            "modified": "2024-02-02T21:39:03.757Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"admin\",\n  \"password\": \"123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c5987b64-1b6f-4cf6-97d4-f877080f66ef",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "92ec6c4d-9975-4598-89ea-ad2d21536ef7",
+            "name": "[Create] Clients",
+            "url": "{{API_TEXTILAPP}}/clients/create",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-02T21:00:15.059Z",
+            "modified": "2024-02-06T15:41:45.009Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cod_client\": \"A2222\",\n  \"first_name\": \"Lady\",\n  \"last_name\": \"Ramos\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "6ef467c8-6d13-4283-8d27-80bdd38d8cb4",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "c16b01a2-5d17-4d5c-9d5e-a7a7b33d1e33",
+            "name": "[Create] Areas",
+            "url": "{{API_TEXTILAPP}}/areas",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-02T21:00:15.065Z",
+            "modified": "2024-02-05T19:08:46.636Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"area26\",\n  \"description\": \"area26 description\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "39c0952b-dd28-44b5-82c0-543c1736add0",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "6b5e6c66-cb69-4c79-9477-99ef1143912d",
+            "name": "[Create] Titles",
+            "url": "{{API_TEXTILAPP}}/titles",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-02T21:00:15.069Z",
+            "modified": "2024-02-06T15:42:51.120Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"title2\",\n  \"description\": \"es un title2 testing\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9d214aba-2a1b-415a-8479-dd85112c4058",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "db370355-cad8-464b-aae3-a4dab85b87e2",
+            "name": "[Create] Colors",
+            "url": "{{API_TEXTILAPP}}/colors",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-02T21:00:15.073Z",
+            "modified": "2024-02-06T15:42:34.081Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cod_color\": \"C-2222\",\n  \"name\": \"color2\",\n  \"description\": \"es un color2 testing\"\n  \n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f04f450e-0352-4f25-aef8-42c4a2dc034c",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "889654f1-4bca-41a2-9bae-0835938180d3",
+            "name": "[Create] Turns",
+            "url": "{{API_TEXTILAPP}}/turns",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-06T15:35:54.110Z",
+            "modified": "2024-02-06T15:40:44.201Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"turno de prueba\",\n  \"start_time\": \"08:00:00\",\n  \"end_time\": \"12:00:00\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c4017259-6820-43c3-943a-0eb57d09cf37",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "adb8130b-ed06-4137-a0cb-44e9c8546b64",
+            "name": "[Create] Occupations",
+            "url": "{{API_TEXTILAPP}}/occupations",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-06T15:49:05.297Z",
+            "modified": "2024-02-06T15:58:35.118Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Ocupación de prueba\",\n  \"id_turn\": \"1\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b3dcd0b6-ddb2-4763-a327-1192cde31718",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "f5b870e8-23c5-46d1-8820-29a55b7a0af0",
+            "name": "[Create] Operators",
+            "url": "{{API_TEXTILAPP}}/operators",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-07T02:49:47.886Z",
+            "modified": "2024-02-07T03:03:10.392Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cod_operator\": \"O-5252\",\n  \"first_name\": \"Alex\",\n  \"last_name\": \"Ramos\",\n  \"cellphone\": \"79458621\",\n  \"id_occupation\": 4\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "ef00898b-de4d-42b0-893a-0161aaf3a7b0",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "7ec65422-05dc-4f81-a610-cc6cf4755a58",
+            "name": "[Create] Products",
+            "url": "{{API_TEXTILAPP}}/products",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-07T03:05:39.639Z",
+            "modified": "2024-02-23T04:52:13.343Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"lote\": \"999\",\n  \"name\": \"Producto de Prueba 999\",\n  \"weight_less\": 0.5,\n  \"weight_total\": 52,\n  \"observation\": \"producto solamente de prueba 999\",\n  \"id_area\": 2,\n  \"id_color\": 54,\n  \"id_title\": 22\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "391b5c49-55a0-4914-8cb7-0acd717d3b24",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "92ec6c4d-9975-4598-89ea-ad2d21536ef7",
+            "name": "[Update] Clients",
+            "url": "{{API_TEXTILAPP}}/clients/1",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-02-02T21:00:15.060Z",
+            "modified": "2024-02-06T15:41:49.095Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"enabled\": true\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "585e0bbf-e125-4352-8912-818027398db7",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "92ec6c4d-9975-4598-89ea-ad2d21536ef7",
+            "name": "[Get] All Clients",
+            "url": "{{API_TEXTILAPP}}/clients?enabled=1",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-02T21:00:15.061Z",
+            "modified": "2024-02-06T15:41:52.913Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "enabled",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "12e97b39-af4c-486d-b29c-accbd365c014",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "92ec6c4d-9975-4598-89ea-ad2d21536ef7",
+            "name": "[Get] Clients ID",
+            "url": "{{API_TEXTILAPP}}/clients/2",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-02T21:00:15.064Z",
+            "modified": "2024-02-06T15:41:57.021Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "adddd6f0-002b-4942-a55a-0dfa9a808bba",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "c16b01a2-5d17-4d5c-9d5e-a7a7b33d1e33",
+            "name": "[Update] Areas",
+            "url": "{{API_TEXTILAPP}}/areas",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-02-02T21:00:15.066Z",
+            "modified": "2024-02-06T15:42:14.398Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 2,\n  \"name\": \"area2\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f4d67274-cb5b-4817-92d1-ef1392cd6213",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "c16b01a2-5d17-4d5c-9d5e-a7a7b33d1e33",
+            "name": "[Get] All Areas",
+            "url": "{{API_TEXTILAPP}}/areas?notlimit=true",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-02T21:00:15.067Z",
+            "modified": "2024-02-06T15:42:18.420Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "notlimit",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "313e3c80-07a1-4ed3-a7c2-36bda0e54864",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "c16b01a2-5d17-4d5c-9d5e-a7a7b33d1e33",
+            "name": "[Get] Area ID",
+            "url": "{{API_TEXTILAPP}}/areas/2",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-02T21:00:15.068Z",
+            "modified": "2024-02-06T15:42:22.986Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "dd2734a2-0d65-4865-b30b-3a143c6d3843",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "6b5e6c66-cb69-4c79-9477-99ef1143912d",
+            "name": "[Update] Titles",
+            "url": "{{API_TEXTILAPP}}/titles",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-02-02T21:00:15.070Z",
+            "modified": "2024-02-06T15:42:54.991Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 2,\n  \"name\": \"title2\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9150ab02-b9d1-4314-9065-1e45b16d3786",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "6b5e6c66-cb69-4c79-9477-99ef1143912d",
+            "name": "[Get] All Titles",
+            "url": "{{API_TEXTILAPP}}/titles?search=cuero",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-02T21:00:15.071Z",
+            "modified": "2024-02-06T15:42:58.758Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "search",
+                    "value": "cuero",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b9c12f4c-e0f0-40d8-b405-6ad97561600b",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "6b5e6c66-cb69-4c79-9477-99ef1143912d",
+            "name": "[Get] Titles ID",
+            "url": "{{API_TEXTILAPP}}/titles/2",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-02T21:00:15.072Z",
+            "modified": "2024-02-06T15:43:02.868Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "4410540c-1cb1-45fd-b411-49117340111d",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "db370355-cad8-464b-aae3-a4dab85b87e2",
+            "name": "[Update] Colors",
+            "url": "{{API_TEXTILAPP}}/colors",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-02-02T21:00:15.074Z",
+            "modified": "2024-02-06T15:42:37.655Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 2,\n  \"name\": \"color2\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "32b10455-9011-4944-8736-924fb6fad4fb",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "db370355-cad8-464b-aae3-a4dab85b87e2",
+            "name": "[Get] All Colors",
+            "url": "{{API_TEXTILAPP}}/colors?search=rojo",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-02T21:00:15.075Z",
+            "modified": "2024-02-06T15:42:41.561Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "search",
+                    "value": "rojo",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "cdcc4f64-bdf4-4078-9c04-cf027d73db5d",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "db370355-cad8-464b-aae3-a4dab85b87e2",
+            "name": "[Get] Colors ID",
+            "url": "{{API_TEXTILAPP}}/colors/2",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-02T21:00:15.076Z",
+            "modified": "2024-02-06T15:42:45.598Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "1a117add-e339-4344-8abd-bbe433257fc6",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "889654f1-4bca-41a2-9bae-0835938180d3",
+            "name": "[Update] Turns",
+            "url": "{{API_TEXTILAPP}}/turns",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-02-06T15:35:54.111Z",
+            "modified": "2024-02-06T15:44:00.653Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 4,\n  \"name\": \"turno de prueba edit\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "19eeda2c-72ca-4bbe-a005-fb6b94f7e2ac",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "889654f1-4bca-41a2-9bae-0835938180d3",
+            "name": "[Get] All Turns",
+            "url": "{{API_TEXTILAPP}}/turns?notlimit=true",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-06T15:35:54.112Z",
+            "modified": "2024-02-06T15:41:34.416Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "notlimit",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "4628a4f9-f526-4aee-8da2-3b63c0f71b8b",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "889654f1-4bca-41a2-9bae-0835938180d3",
+            "name": "[Get] Turn ID",
+            "url": "{{API_TEXTILAPP}}/turns/4",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-06T15:35:54.113Z",
+            "modified": "2024-02-06T15:43:28.988Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "3956f44f-a7a0-47f2-b704-052ca5366e77",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "adb8130b-ed06-4137-a0cb-44e9c8546b64",
+            "name": "[Update] Ocuppations",
+            "url": "{{API_TEXTILAPP}}/occupations",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-02-06T15:49:05.298Z",
+            "modified": "2024-02-06T15:59:36.594Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 4,\n  \"name\": \"Ocupación de prueba edit\",\n  \"id_turn\": 2\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "59fdba44-9259-4c32-ad70-6f1f257135b8",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "adb8130b-ed06-4137-a0cb-44e9c8546b64",
+            "name": "[Get] All Occupations",
+            "url": "{{API_TEXTILAPP}}/occupations?notlimit=true",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-06T15:49:05.299Z",
+            "modified": "2024-02-06T15:51:04.864Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "notlimit",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "7ca557f2-6fb7-4577-99ab-f87941b19ec1",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "adb8130b-ed06-4137-a0cb-44e9c8546b64",
+            "name": "[Get] Occupation ID",
+            "url": "{{API_TEXTILAPP}}/occupations/1",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-06T15:49:05.300Z",
+            "modified": "2024-02-06T15:57:56.287Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c6ea8d87-28c1-4cc3-aeb3-0e3e01df4f9c",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "f5b870e8-23c5-46d1-8820-29a55b7a0af0",
+            "name": "[Update] Operators",
+            "url": "{{API_TEXTILAPP}}/operators",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-02-07T02:49:47.887Z",
+            "modified": "2024-02-07T03:03:44.763Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 2,\n  \"cod_operator\": \"O-5253\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e4745030-514d-4c42-9cdb-6bf697413eb7",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "f5b870e8-23c5-46d1-8820-29a55b7a0af0",
+            "name": "[Get] All Operators",
+            "url": "{{API_TEXTILAPP}}/operators?notlimit=true",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-07T02:49:47.889Z",
+            "modified": "2024-02-07T04:31:54.930Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "notlimit",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "5f3c981f-c840-4c09-a842-650825fe9abe",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "f5b870e8-23c5-46d1-8820-29a55b7a0af0",
+            "name": "[Get] Operator ID",
+            "url": "{{API_TEXTILAPP}}/operators/1",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-07T02:49:47.890Z",
+            "modified": "2024-02-10T18:13:54.060Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "dabf4a2d-edb1-4211-945f-313013486aa1",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "7ec65422-05dc-4f81-a610-cc6cf4755a58",
+            "name": "[Update] Products",
+            "url": "{{API_TEXTILAPP}}/products",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-02-07T03:05:39.640Z",
+            "modified": "2024-02-22T19:46:42.711Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 23,\n  \"weight_less\": 0.2\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "1504a9f7-5fb6-46ff-9e3f-07b1575a40fa",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "7ec65422-05dc-4f81-a610-cc6cf4755a58",
+            "name": "[Get] All Products",
+            "url": "{{API_TEXTILAPP}}/products?notlimit=true",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-07T03:05:39.641Z",
+            "modified": "2024-02-07T03:06:16.221Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "notlimit",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "51781bba-18c7-44a2-b620-db791d8192dd",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "7ec65422-05dc-4f81-a610-cc6cf4755a58",
+            "name": "[Get] Product ID",
+            "url": "{{API_TEXTILAPP}}/products/23",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-07T03:05:39.642Z",
+            "modified": "2024-02-22T19:48:12.024Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "34454f38-111f-4975-9e27-aa0344f22dfa",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "92ec6c4d-9975-4598-89ea-ad2d21536ef7",
+            "name": "[Get] All Clients Enabled",
+            "url": "{{API_TEXTILAPP}}/clients/enabled",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-02-02T21:00:15.062Z",
+            "modified": "2024-02-06T15:42:01.235Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c6f19b7a-6c65-4b26-a609-5ad4daec0050",
+            "colId": "113de6cd-d850-4dde-8e69-673e5f66eccd",
+            "containerId": "92ec6c4d-9975-4598-89ea-ad2d21536ef7",
+            "name": "[Get] All Clients Disabled",
+            "url": "{{API_TEXTILAPP}}clients/disabled",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-02-02T21:00:15.063Z",
+            "modified": "2024-02-06T15:42:05.229Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN_TEXTILAPP}}"
+            },
+            "tests": []
+        }
+    ]
+}

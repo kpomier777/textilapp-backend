@@ -1,0 +1,20 @@
+{
+    "client": "Thunder Client",
+    "environmentName": "textilapp-env",
+    "dateExported": "2024-02-27T01:31:49.595Z",
+    "version": "1.0",
+    "variables": [
+        {
+            "name": "API_TEXTILAPP",
+            "value": "http://localhost:3001"
+        },
+        {
+            "name": "API_TEXTILAPP_DEV",
+            "value": "https://api-textilapp.onrender.com"
+        },
+        {
+            "name": "TOKEN_TEXTILAPP",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE2LCJpYXQiOjE3MDg2MzExNDAsImV4cCI6MTcwODcxNzU0MH0.90m7j-GcgNtgorpA2LBP8AFVKXW2w9Y7GnLinC2oQ44"
+        }
+    ]
+}
